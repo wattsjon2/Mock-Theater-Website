@@ -1,0 +1,103 @@
+@import url(https://fonts.google.com/specimen/Roboto);
+
+body{font-family: Roboto;}
+
+.topbackground{
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+#featured{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.info{
+    grid-area: info;
+    
+}
+
+.showpicture{
+    grid-area: showpicture;
+}
+
+.readmore{
+    grid-area: readmore;
+}
+
+.gridcontainer{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "showpicture info readmore";
+}
+
+.container{
+    margin:0 auto;
+    width: 100%;
+    position: relative;
+    
+}
+
+.monthcontainer{
+    margin:0 auto;
+    width: 60%;
+    position: relative;
+    border: 1px solid black;
+    height: 60px;
+    padding-left: 50px;
+    background-color: lightgrey;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.showpicture, .info, .readmore, .map, .bottominfo, .shows, .social{
+    justify-self: center;
+    align-self: center;
+    list-style-type: none;
+}
+
+.bottomcontainer{
+    
+    background-color: black;
+    color:white;
+    font-size: xx-small;
+    padding: 100px 100px 100px 100px
+}
+
+.bottomgrid{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "map bottominfo shows social";
+}
+
+.map{
+    grid-area: map;
+}
+
+.bottominfo{
+    grid-area: bottominfo;
+    
+}
+
+.shows{
+    grid-area: shows;
+    
+}
+
+.social{
+    grid-area: social;
+
+}
+
+#bigtext{
+    font-size: large;
+}
